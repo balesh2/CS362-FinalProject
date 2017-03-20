@@ -1,5 +1,7 @@
 package balesh.dominion;
 
+import org.junit.Test;
+
 import junit.framework.TestCase;
 
 import java.util.ArrayList;
@@ -7,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
-import org.junit.Test;
+
 
 
 public class RandomTestDominion extends TestCase {
@@ -25,6 +27,8 @@ public class RandomTestDominion extends TestCase {
     		
     		int randNumPlay = ThreadLocalRandom.current().nextInt(2, 5);
     		System.out.println("RANDOM NUMBER OF PLAYERS: "+randNumPlay);
+    		assertTrue("Number of players must be at least 2\n", randNumPlay >= 2);
+    		assertTrue("Number of players must be less than 6\n", randNumPlay < 6);
 
     		for(int i=1; i<=randNumPlay; i++) {
     			Player player = new Player(state, "player-"+i);
@@ -35,7 +39,7 @@ public class RandomTestDominion extends TestCase {
     		}
     		
     		//check the number of players
-    		assertEquals(state.players.size(), randNumPlay);
+    		assertEquals("Number of players created must equal random number generated\n", state.players.size(), randNumPlay);
 
 
     		//init game
@@ -45,11 +49,11 @@ public class RandomTestDominion extends TestCase {
 
     		//check that all the players got cards
     		for(int i=0; i<randNumPlay; i++) {
-    			assertEquals(state.players.get(i).hand.size(), 5);
-                assertEquals(state.players.get(i).discard.size(), 0);
-                assertEquals(state.players.get(i).deck.size(), 5);
-                assertEquals(state.players.get(i).Trash.size(), 0);
-                assertEquals(state.players.get(i).playedCards.size(), 0);
+    			assertEquals("Hand must contain 5 cards\n", state.players.get(i).hand.size(), 5);
+                assertEquals("Discard must be empty\n", state.players.get(i).discard.size(), 0);
+                assertEquals("Deck must contain 5 cards\n", state.players.get(i).deck.size(), 5);
+                assertEquals("Trash must be empty\n", state.players.get(i).Trash.size(), 0);
+                assertEquals("No cards should have been played\n", state.players.get(i).playedCards.size(), 0);
     		}
     		
     		//play the game
@@ -63,7 +67,7 @@ public class RandomTestDominion extends TestCase {
     		}
     		
     		//check that there was a winner
-    		assertNotNull(winners);
+    		assertNotNull("A winner must have been decided\n", winners);
         }
 	}
 
