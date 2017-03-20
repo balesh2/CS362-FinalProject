@@ -1,0 +1,35 @@
+\begin{lstlisting}
+[MVNVM] Using maven: 3.3.9
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dominion 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- pitest-maven:1.1.11:mutationCoverage (default-cli) @ Dominion ---
+[INFO] Found plugin : Default csv report plugin
+[INFO] Found plugin : Default xml report plugin
+[INFO] Found plugin : Default html report plugin
+[INFO] Found plugin : Default limit mutations plugin
+[INFO] Found plugin : Kotlin junk mutations filter
+[INFO] Found shared classpath plugin : Default mutation engine
+[INFO] Adding org.pitest:pitest to SUT classpath
+[INFO] Mutating from /Users/helenabales/Documents/School/04/CS362/Github/projects/hendriri/Dominion/target/classes
+[INFO] Defaulting to group id (org.cs362.dominion*)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.831 s
+[INFO] Finished at: 2017-03-20T12:58:39-07:00
+[INFO] Final Memory: 11M/206M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.pitest:pitest-maven:1.1.11:mutationCoverage (default-cli) on project Dominion: Execution default-cli of goal org.pitest:pitest-maven:1.1.11:mutationCoverage failed: All tests did not pass without mutation when calculating line coverage. Mutation testing requires a green suite.
+[ERROR] See http://pitest.org for more details.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+\end{lstlisting}

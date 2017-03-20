@@ -1,0 +1,345 @@
+\begin{lstlisting}
+----------------------------------------------------------------------------
+- Timings
+----------------------------------------------------------------------------
+
+> scan classpath : < 1 second
+> coverage and dependency analysis : 5 seconds
+> build mutation tests : < 1 second
+> run mutation analysis : 40 seconds
+----------------------------------------------------------------------------
+> Total  : 46 seconds
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+- Statistics
+----------------------------------------------------------------------------
+
+>> Generated 199 mutations Killed 0 (0%)
+>> Ran 2997 tests (15.06 tests per mutation)
+
+----------------------------------------------------------------------------
+- Mutators
+----------------------------------------------------------------------------
+
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 31 Killed 0 (0%)
+> KILLED 0 SURVIVED 12 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 19 
+----------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 22 Killed 0 (0%)
+> KILLED 0 SURVIVED 6 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 16 
+----------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 16 Killed 0 (0%)
+> KILLED 0 SURVIVED 9 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 7 
+----------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+>> Generated 30 Killed 0 (0%)
+> KILLED 0 SURVIVED 22 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 8 
+----------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 19 Killed 0 (0%)
+> KILLED 0 SURVIVED 3 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 16 
+----------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 81 Killed 0 (0%)
+> KILLED 0 SURVIVED 40 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 41 
+----------------------------------------------------------------------------
+\end{lstlisting}
+[MVNVM] Using maven: 3.3.9
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dominion 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- pitest-maven:1.1.11:mutationCoverage (default-cli) @ dominion ---
+[INFO] Found plugin : Default csv report plugin
+[INFO] Found plugin : Default xml report plugin
+[INFO] Found plugin : Default html report plugin
+[INFO] Found plugin : Default limit mutations plugin
+[INFO] Found plugin : Kotlin junk mutations filter
+[INFO] Found shared classpath plugin : Default mutation engine
+[INFO] Adding org.pitest:pitest to SUT classpath
+[INFO] Mutating from /Users/helenabales/Documents/workspace/dominion/target/classes
+/-\|/stderr  : objc[11198]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib. One of the two will bstderr  : e used. Which one is undefined.
+stderr  : SLF4J: Class path contains multiple SLF4J bindings.
+stderr  : SLF4J: Found binding in [jar:file:/Users/helenabales/.m2/repository/org/slf4j/slf4j-nop/1.7.25/slf4j-nop-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+stderr  : SLF4J: Found binding in [jar:file:/Users/helenabales/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]stderr  : 
+stderr  : SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.stderr  : 
+stderr  : SLF4J: Actual binding is of type [org.slf4j.helpers.NOPLoggerFactory]
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.stderr  : 
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : objc[11199]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib. One of the two will bstderr  : e used. Which one is undefined.
+/stderr  : SLF4J: Class path contains multiple SLF4J bindings.
+stderr  : SLF4J: Found binding in [jar:file:/Users/helenabales/.m2/repository/org/slf4j/slf4j-nop/1.7.25/slf4j-nop-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+stderr  : SLF4J: Found binding in [jar:file:/Users/helenabales/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]stderr  : 
+stderr  : SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.stderr  : 
+stderr  : SLF4J: Actual binding is of type [org.slf4j.helpers.NOPLoggerFactory]
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+-stderr  : objc[11200]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib. One of the two will bstderr  : e used. Which one is undefined.
+stderr  : SLF4J: Class path contains multiple SLF4J bindings.stderr  : 
+stderr  : SLF4J: Found binding in [jar:file:/Users/helenabales/.m2/repository/org/slf4j/slf4j-nop/1.7.25/slf4j-nop-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]stderr  : 
+stderr  : SLF4J: Found binding in [jar:file:/Users/helenabales/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]stderr  : 
+stderr  : SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.stderr  : 
+stderr  : SLF4J: Actual binding is of type [org.slf4j.helpers.NOPLoggerFactory]stderr  : 
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.stderr  : 
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.stderr  : 
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.stderr  : 
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.stderr  : 
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.stderr  : 
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.stderr  : 
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.stderr  : 
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.stderr  : 
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.stderr  : 
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+stderr  : The Number of players must be between 2 and 4.
+\stderr  : objc[11202]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib. One of the two will bstderr  : e used. Which one is undefined.
+stderr  : SLF4J: Class path contains multiple SLF4J bindings.
+stderr  : SLF4J: Found binding in [jar:file:/Users/helenabales/.m2/repository/org/slf4j/slf4j-nop/1.7.25/slf4j-nop-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]stderr  : 
+stderr  : SLF4J: Found binding in [jar:file:/Users/helenabales/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]stderr  : 
+stderr  : SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.stderr  : 
+stderr  : SLF4J: Actual binding is of type [org.slf4j.helpers.NOPLoggerFactory]stderr  : 
+|stderr  : objc[11204]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib. One of the two will bstderr  : e used. Which one is undefined.
+stderr  : SLF4J: Class path contains multiple SLF4J bindings.
+stderr  : SLF4J: Found binding in [jar:file:/Users/helenabales/.m2/repository/org/slf4j/slf4j-nop/1.7.25/slf4j-nop-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+stderr  : SLF4J: Found binding in [jar:file:/Users/helenabales/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+stderr  : SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+stderr  : SLF4J: Actual binding is of type [org.slf4j.helpers.NOPLoggerFactory]
+/================================================================================
+- Timings
+================================================================================
+> scan classpath : < 1 second
+> coverage and dependency analysis : 5 seconds
+> build mutation tests : < 1 second
+> run mutation analysis : 45 seconds
+--------------------------------------------------------------------------------
+> Total  : 51 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Generated 199 mutations Killed 0 (0%)
+>> Ran 2997 tests (15.06 tests per mutation)
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 31 Killed 0 (0%)
+> KILLED 0 SURVIVED 12 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 19 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 22 Killed 0 (0%)
+> KILLED 0 SURVIVED 6 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 16 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 16 Killed 0 (0%)
+> KILLED 0 SURVIVED 9 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 7 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+>> Generated 30 Killed 0 (0%)
+> KILLED 0 SURVIVED 22 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 8 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 19 Killed 0 (0%)
+> KILLED 0 SURVIVED 3 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 16 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 81 Killed 0 (0%)
+> KILLED 0 SURVIVED 40 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 41 
+--------------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 54.559 s
+[INFO] Finished at: 2017-03-20T14:54:04-07:00
+[INFO] Final Memory: 14M/205M
+[INFO] ------------------------------------------------------------------------

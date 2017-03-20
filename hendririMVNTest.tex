@@ -1,0 +1,60 @@
+\begin{lstlisting}
+[MVNVM] Using maven: 3.3.9
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Dominion 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Dominion ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/helenabales/Documents/School/04/CS362/Github/projects/hendriri/Dominion/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Dominion ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Dominion ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/helenabales/Documents/School/04/CS362/Github/projects/hendriri/Dominion/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Dominion ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ Dominion ---
+[INFO] Surefire report directory: /Users/helenabales/Documents/School/04/CS362/Github/projects/hendriri/Dominion/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+//TEST RESULTS ABRIDGED TO FIT REASONABLY IN A DOCUMENT
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+
+Results :
+
+Failed tests:   Smithy(org.cs362.dominion.CardTest): expected:<7> but was:<8>
+  Ittakesavillage(org.cs362.dominion.CardTest): expected:<1> but was:<2>
+  BaronTEST1(org.cs362.dominion.CardTest): expected:<3> but was:<4>
+  cuturpurse(org.cs362.dominion.CardTest): expected:<1> but was:<2>
+  salveme(org.cs362.dominion.CardTest): expected:<1> but was:<2>
+
+Tests run: 29, Failures: 5, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.109 s
+[INFO] Finished at: 2017-03-20T12:48:29-07:00
+[INFO] Final Memory: 9M/155M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project Dominion: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/helenabales/Documents/School/04/CS362/Github/projects/hendriri/Dominion/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+/end{lstlisting}
