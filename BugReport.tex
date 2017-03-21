@@ -1,0 +1,105 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{glossaries}
+\usepackage[pdftex]{graphicx}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage{listings}
+\usepackage{color}
+\geometry{textheight=8.5in, textwidth=6in}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=bash,
+    aboveskip=3mm,
+      belowskip=3mm,
+	showstringspaces=false,
+	  columns=flexible,
+	    basicstyle={\small\ttfamily},
+	      numbers=none,
+	        numberstyle=\tiny\color{gray},
+		  keywordstyle=\color{blue},
+		    commentstyle=\color{dkgreen},
+		      stringstyle=\color{mauve},
+		        breaklines=true,
+			  breakatwhitespace=true,
+			    tabsize=3
+			    }
+
+\title{Final Project: Bug Report - Hendriri Dominion Implementation}
+\author{Helena~Bales\\ \\ CS362-001 \\ Winter 2017}
+
+\parindent = 0.0 in
+\parskip = 0.1 in
+
+\begin{document}
+\maketitle
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\section{Introduction}
+This document is a Bug Report as part of the CS362 Final Project on Mutation Testing. This document 
+reports the presence of two bugs in a classmate's, hendriri's, implementation of Dominion. The 
+Dominion implementation was pulled from the class Github repository on March 19th, 2017.
+
+\section{Bugs}
+\subsection{Bug 1 - Card - Smithy}
+\subsubsection{Error Message}
+This is the error message that was returned when running the tests through Maven.
+
+\begin{lstlisting}
+Smithy(org.cs362.dominion.CardTest): expected:<7> but was:<8>
+\end{lstlisting}
+
+\subsubsection{Bug Location}
+The test that did not pass was the Test called Smithy() in CardTest. I found that the following line 
+in CardTest is the assertion that did not pass. It is checking the hand size for player 1 after 
+playing a Kingdom card.
+
+\begin{lstlisting}
+assertEquals(player1.hand.size(), 8);
+\end{lstlisting}
+
+In order to find the bug, I looked at the Smithy() function in Card.java. In this function, I found 
+the bug that hendriri had introduced. The Smithy() function only drew two new cards when it was 
+supposed to draw 3. 
+
+\subsubsection{Solution}
+This bug is very easy to fix as all it requires is to draw one more card in the 
+Smithy function in Card.
+
+\subsection{Bug 2 - Card - Baron}
+\subsubsection{Error Message}
+This is the error message that was returned when running the tests through Maven.
+
+\begin{lstlisting}
+BaronTEST1(org.cs362.dominion.CardTest): expected:<3> but was:<4>
+\end{lstlisting}
+
+\subsubsection{Bug Location}
+The test that did not pass was the test called BaronTEST1() in CardTest. I found that the following line in CardTest is the assertion that did not pass. It is checking for the number of coins after 
+playing a kingdom card.
+
+\begin{lstlisting}
+assertEquals(player1.coins, 4);
+\end{lstlisting}
+
+In order to find the bug, I looked at the Baron() function in Card.java. In this function, I found the
+ bug that henriri had introduced. The Baron() function adds one too few coins, resulting in the player
+ having three and needing four.
+
+\subsubsection{Solution}
+This is a very easy bug to fix. On line 253 of Card.java, the 3 should be changed to a 4.
+
+\section{Conclusion}
+The bugs reported in this document are both off-by-one errors that were found through Unit Testing of 
+hendriri's Domnion Implementation. They are both located in the Card.java file. They can easily both 
+be fixed by changing the two functions Baron() and Smithy().
+\end{document}

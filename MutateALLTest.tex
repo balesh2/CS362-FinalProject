@@ -1,0 +1,81 @@
+\begin{lstlisting}
+[MVNVM] Using maven: 3.3.9
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dominion 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- pitest-maven:1.1.11:mutationCoverage (default-cli) @ Dominion ---
+[INFO] Found plugin : Default csv report plugin
+[INFO] Found plugin : Default xml report plugin
+[INFO] Found plugin : Default html report plugin
+[INFO] Found plugin : Default limit mutations plugin
+[INFO] Found plugin : Kotlin junk mutations filter
+[INFO] Found shared classpath plugin : Default mutation engine
+[INFO] Adding org.pitest:pitest to SUT classpath
+[INFO] Mutating from /Users/helenabales/Documents/workspace/dominion/target/classes
+[INFO] Defaulting to group id (balesh.dominion*)
+
+================================================================================
+- Timings
+================================================================================
+> scan classpath : < 1 second
+> coverage and dependency analysis : 7 seconds
+> build mutation tests : < 1 second
+> run mutation analysis : 2 minutes and 30 seconds
+--------------------------------------------------------------------------------
+> Total  : 2 minutes and 38 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Generated 199 mutations Killed 48 (24%)
+>> Ran 1996 tests (10.03 tests per mutation)
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 31 Killed 7 (23%)
+> KILLED 6 SURVIVED 11 TIMED_OUT 1 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 13 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator
+>> Generated 22 Killed 8 (36%)
+> KILLED 3 SURVIVED 5 TIMED_OUT 5 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 9 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 16 Killed 2 (13%)
+> KILLED 0 SURVIVED 7 TIMED_OUT 2 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 7 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.ReturnValsMutator
+>> Generated 30 Killed 9 (30%)
+> KILLED 7 SURVIVED 16 TIMED_OUT 2 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 5 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.MathMutator
+>> Generated 19 Killed 2 (11%)
+> KILLED 0 SURVIVED 7 TIMED_OUT 2 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 10 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator
+>> Generated 81 Killed 20 (25%)
+> KILLED 15 SURVIVED 31 TIMED_OUT 5 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 30 
+--------------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:40 min
+[INFO] Finished at: 2017-03-20T16:11:46-07:00
+[INFO] Final Memory: 12M/301M
+[INFO] ------------------------------------------------------------------------
+\end{lstlisting}
